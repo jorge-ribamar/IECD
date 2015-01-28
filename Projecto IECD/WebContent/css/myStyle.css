@@ -1,0 +1,426 @@
+body {
+	margin: 8px auto; /*Não deixa margem e o "auto" centra o body */
+    
+    background: -webkit-linear-gradient(bottom, rgba(255,128,0,1), rgba(255,128,0,0.4), rgba(255,128,0,1)); /* Safari 5.1 até 6.0 */
+    background: -o-linear-gradient(top, rgba(255,128,0,1), rgba(255,128,0,0.4), rgba(255,128,0,1)); /*  Opera 11.1 até 12.0 */
+    background: -moz-linear-gradient(top, rgba(255,128,0,1), rgba(255,128,0,0.4), rgba(255,128,0,1)); /* For Firefox 3.6 até 15 */
+    background: linear-gradient(to top, rgba(255,128,0,1), rgba(255,128,0,0.5), rgba(255,128,0,1)); /* Standard syntax (precisa estar em ultimo) */	
+}
+
+#erro{
+	color: red;
+}
+
+#divPrincipal{
+	margin: 0px auto; /*Não deixa margem e o "auto" centra o body */
+	max-width: 90%; /*Define a largura máxima do body*/
+	background-color: #ffffff;
+	border-radius: 10px;
+    box-shadow: 0px 0px 10px #000000;  
+}
+
+#headerPrincipal {
+	text-align: left;
+	height: 59px;
+	border-bottom: 1px solid #878889;
+	max-width:90%;
+	position: relative;
+	margin: auto;
+}
+
+#sectionCorpo {
+	height:660px;
+	text-align: center;
+	position: relative;
+
+	overflow: auto;
+	margin-bottom: 63px;
+}
+
+#imgLogo{
+	/* Faz com que todas as transições sejam suaves*/
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	
+	background-color: black;
+	border-radius: 100%;
+	position:relative;
+	top:55px;
+}
+
+#imgLogo:HOVER{
+	box-shadow: 0px 0px 10px #000000;
+}
+
+#formLogin{
+	top:14%;
+	position: relative;
+}
+
+#formRegisto1{
+	position:relative;
+	top:16%;
+	font-family:"Times New Roman",Times,serif;
+}
+
+.inputLogin {
+	/* Faz com que todas as transições sejam suaves*/
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	
+	width: 300px;
+	height: 30px;
+	border: 2px solid #dadada;
+	border-radius: 7px;
+	font-size: 16px;
+	
+}
+
+/* Quando o rato passa por cima da caixa de texto*/
+.inputLogin:hover {
+	border: 2px solid #c3c3c3;
+	box-shadow: 0px 0px 1px #c3c3c3;
+}
+
+/* Quando clicamos na caixa de texto*/
+.inputLogin:focus {
+
+	border: 2px solid white;
+	box-shadow: 0px 0px 10px #9ecaed;
+	
+}
+
+#pass{
+	margin-top: 12px;
+}
+
+#botaoLogin{
+	/*Altera o aspecto do botão*/
+    background: -moz-linear-gradient(top,#4d90fe,#357ae8);
+    background: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    background:-o-linear-gradient(top,#4d90fe,#357ae8);
+    background:-ms-linear-gradient(top,#4d90fe,#357ae8);
+    border:1px solid #2c58b0;
+
+	color:white;
+    border-radius: 4px;
+    width: 78px;
+    height: 34px;
+    margin-top:14px;
+    font-size: 15px;
+}
+
+#botaoLogin:hover{
+    border:1px solid #143b64;
+    box-shadow: 0 0 2px #143b64 inset;
+}
+
+/* Quando o botão é clicado muda a cor*/
+#botaoLogin:active{
+    background: -moz-linear-gradient(top, #3f7edd, #2c58c8);
+    background: -webkit-linear-gradient(top, #3f7edd, #2c58c8);
+    background:-o-linear-gradient(top, #3f7edd, #2c58c8);
+    background:-ms-linear-gradient(top, #3f7edd, #2c58c8);
+    border:1px solid #1a3264;
+    box-shadow: 0 0 3px #0f1b36 inset;
+}
+
+
+#botaoRegistar{
+	/*Retira a aparencia de botão*/
+	border:none;
+	background: none;
+	font-family:"Times New Roman",Times,serif;
+	font-size: 16px;
+	margin-left: 0px;
+	color: #0000f2;
+}
+
+#botaoRegistar:HOVER{
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+
+footer {
+	clear: both;
+	padding: 4px 0px;
+	border-top: 1px solid #878889;
+	position:relative;
+	padding-top:14px;
+	bottom: 0%;
+	max-width: 90%;
+	height: 40px;
+	margin:auto;
+}
+
+
+#imgLogoSmall{
+	
+	margin-top: 8px;
+}
+
+#sectionRegisto {
+	display: block;
+	height: 700px;
+	text-align: center;
+	border: 2px solid #b0afb1;
+	border-radius:5px;
+	width: 29%;
+	height:49%;
+	margin: auto;
+	position: relative;
+	top:15%;
+	text-align: left;
+	background-color: #f1f0f2;
+	box-shadow: 0 0 10px #7c7c7c;
+}
+
+#headerRegisto{
+	border-bottom:2px solid #b0afb1;
+	box-shadow: 0 1px 3px #cfced0;
+}
+
+#h1Registo{
+    font-size: 46px;
+    color: #262727;
+    text-shadow: 0 3px 0 #ece8f0;
+    font-family: "Lato", arial, serif;
+    margin:2px 7px;
+}
+
+#pRegisto{
+    font-size: 18px;
+    color: #414343;
+    text-shadow: 0 0px 0 #6b6a6b;
+    margin:7px 10px;
+}
+
+
+
+#userIcon{
+	margin-top:12px;
+	margin-left:9px;
+}
+
+#passIcon{
+	margin-top:8px;
+	margin-left:9px;
+}
+
+#repeatIcon{
+	margin-top:8px;
+	margin-left:9px;
+}
+
+#userNameRegisto{
+	margin-left:4px;
+	top:-12px;
+	position: relative;
+}
+
+#pass1{
+	margin-left:6px;
+	top:-11px;
+	position: relative;
+}
+
+#pass2{
+	margin-left:4px;
+	top:-12px;
+	position: relative;
+}
+
+#botaoSubmeterRegisto{
+	/*Altera o aspecto do botão*/
+    background: -moz-linear-gradient(top,#4d90fe,#357ae8);
+    background: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    background:-o-linear-gradient(top,#4d90fe,#357ae8);
+    background:-ms-linear-gradient(top,#4d90fe,#357ae8);
+    border:1px solid #2c58b0;
+
+	color:white;
+    border-radius: 4px;
+    width: 82px;
+    height: 34px;
+    margin-top:13px;
+    left:143px;
+    font-size: 15px;
+    position:relative;
+    
+    
+}
+
+#botaoSubmeterRegisto:hover{
+    border:1px solid #143b64;
+    box-shadow: 0 0 2px #143b64 inset;
+}
+
+/* Quando o botão é clicado muda a cor*/
+#botaoSubmeterRegisto:active{
+    background: -moz-linear-gradient(top, #3f7edd, #2c58c8);
+    background: -webkit-linear-gradient(top, #3f7edd, #2c58c8);
+    background:-o-linear-gradient(top, #3f7edd, #2c58c8);
+    background:-ms-linear-gradient(top, #3f7edd, #2c58c8);
+    border:1px solid #1a3264;
+    box-shadow: 0 0 3px #0f1b36 inset;
+}
+
+#sectionMenuPrincipal{
+
+	height: 700px;
+	text-align: center;
+	border: 1px solid #78767f;
+	border-radius:5px;
+	width: 50%;
+	height:30%;
+	margin: auto;
+	position: relative;
+	top:35%;
+
+	background-color: #f1f0f2;
+	box-shadow: 0 0 10px #7c7c7c;
+}
+
+
+.iconsMenu{
+	width:128px;
+	height:128px;
+	border: 0;
+	position:relative;
+}
+
+.iconsMenu:hover{
+	/* Faz com que todas as transições sejam suaves*/
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+#PesquisarPois{
+	background:url(imagens/pesquisar.png);
+	right:36%;
+	top:20px;
+}
+
+
+#AdicionarPOI{
+	background:url(imagens/add.png);
+	top:-107px;
+}
+
+#ApresentarUsers{
+	background:url(imagens/user.png);
+	left:36%;
+	top:-231px;
+}
+
+#formLogoff{
+	text-align: right;
+	top:-68px;
+	position: relative;
+	z-index: 1;
+}
+
+#logoff{
+	position:relative;
+	background:url(imagens/off.png);
+	border: 0;
+	width:53px;
+	height:52px;
+}
+
+#logoff:HOVER{
+	cursor:pointer;
+}
+
+#voltar{
+	background: url(imagens/arrow_left.png);
+	border: 0;
+	width:64px;
+	height:64px;
+	position: absolute;
+	top: 80px;
+	left: 1240px;
+}
+
+#voltar:HOVER{
+	cursor:pointer;
+}
+
+#sectionMiddle{
+	border: 1px solid #cfced4;
+	top:85px;
+	position:relative;
+	margin-left: 28%;
+	margin-right: 28%;
+	border-radius:3px;
+	background-color: #f1f0f2;
+	box-shadow: 0px 1px 1px #acabb4;
+	
+}
+
+#sectionPesquisa{
+	border: 1px solid #cfced4;
+	top:85px;
+	position:relative;
+	margin-left: 28%;
+	margin-right: 28%;
+	border-radius:3px;
+	background-color: #f1f0f2;
+	box-shadow: 0px 1px 1px #acabb4;
+}
+
+
+
+#indicador{
+	margin-left: 2%;
+	font:bold 22px/30px verdana,sans-serif;
+	color:#6d6d6d;
+	display:inline;
+	top:62px;
+	position:relative;
+}
+
+#miniLogo{
+	top:76px;
+	left:2%;
+	position:relative;
+}
+
+.inputAddPoi{
+	margin-left:5%;
+	text-align:left;
+	margin-top:12px;
+}
+
+.textoAddPoi{
+	display: inline;
+}
+
+#user{
+	font:22px helvetica;
+	position: relative;
+	top:-120px;
+	left:900px;
+	
+}
+
+.simpleButton{
+	width: 220px;
+	margin:7px;
+}
